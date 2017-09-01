@@ -1,0 +1,123 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h2 {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5px;
+    color: #666;
+    font-family: sans-serif;
+}
+
+.frame {
+    background-color: antiquewhite;
+    width: 150px;
+    height: 60px;
+    font-size: 24px;
+    margin: 10px;
+    display: none;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.start {
+    background-color: red;
+    color: yellow;
+    width: 100px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.button {
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -23%;
+    margin-left: 46%;
+}
+
+.stop {
+    display: none;
+    background-color: yellow;
+    color: red;
+    width: 60px;
+}
+
+.gameZone {
+    cursor: pointer;
+    height: 600px;
+    width: 500px;
+    background-color: lightgreen;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    top: 10px;
+    will-change: transform;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pipes {
+    height: 600px;
+    width: 2400px;
+    transform: translateX(300px);
+    display: flex;
+    will-change: transform;
+}
+
+.pipe {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pipe>div {
+    background-color: #00BB27;
+}
+
+.score-box {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    height: 600px;
+    width: 100px;
+    z-index: 1;
+}
+
+.score {
+    text-align: center;
+    color: #11772D;
+    font-size: 3em;
+    margin-left: -15%;
+    transform: translate(250px, 0);
+}
+
+.bird-box {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    height: 600px;
+    width: 100px;
+    z-index: 1;
+}
+
+.bird {
+    width: 30px;
+    height: 30px;
+    background: red;
+    transform: translate(35px, 0);
+}
